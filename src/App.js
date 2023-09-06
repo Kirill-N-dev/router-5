@@ -9,8 +9,6 @@ function App() {
   return (
     <Switch>
       <Route path="/users/:userId?/:edit?/:excess?" component={UsersLayout} />
-      <Route path="/users/:userId?" component={UserPage} />
-      <Route path="/users" component={UsersList} />
       <Route path="/" component={HomePage} />
       <Redirect to="/" />
     </Switch>
